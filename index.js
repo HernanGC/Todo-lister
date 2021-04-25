@@ -158,12 +158,9 @@ class ToDoList {
 
     incrementTaskKey(taskKey) {
         let myTaskKey = `${taskKey}-`;
-        console.log('first -');
         if (localStorage.getItem(myTaskKey)) {
-            console.log('second -');
             return this.incrementTaskKey(myTaskKey);
         }
-        console.log('thirds -');
         return myTaskKey;
     }
 }

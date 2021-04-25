@@ -13,7 +13,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+div.developed-by {
+    text-align: center;
+}
 @media (min-width: 1200px) {
     .container {
         background-color: rgb(234, 239, 243);
@@ -60,9 +62,22 @@ body {
         float: right;
         transform: scale(1.5);
     }
+    div.developed-by {
+        position: absolute;
+        bottom: 8px;
+    }
+    div.unavailable {
+        display: none;
+    }
 }
 @media (max-width: 1200px) {
     .container, button {
         display: none;
+    }
+    div.unavailable {
+        display: initial;
+        position: absolute;
+        bottom: 14em;
+        text-align: center;
     }
 }
