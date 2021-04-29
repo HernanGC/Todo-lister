@@ -104,8 +104,8 @@ class ToDoList {
     addElement() {
         let task = prompt('Task description:');
         let taskKey = this.keyGenerator(task, 'todo');
-        this.setTaskToStorage(taskKey, task);
         if (task?.trim()) {
+            this.setTaskToStorage(taskKey, task);
             this.createTodoRow(this._todoContainer, task, taskKey);
             this.createHrRow(this._todoContainer, taskKey);
         }
