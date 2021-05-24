@@ -4,8 +4,7 @@ body {
 }
 #root {
     height: 100vh;
-    background: rgb(53,98,82);
-    background: radial-gradient(circle, rgba(53,98,82,1) 0%, rgba(123,142,116,1) 28%, rgba(99,108,119,1) 40%, rgba(89,118,120,1) 47%, rgba(147,130,112,1) 54%, rgba(123,125,99,1) 66%, rgba(69,15,27,1) 100%);
+    background: #e1e1e1;
     display: flex;
     align-content: center;
     flex-wrap: wrap;
@@ -24,14 +23,23 @@ div.developed-by {
         border-radius: 7px;
         text-align: center;
         margin: 0 4em 0 4em;
+        box-shadow: 3px 3px 3px #ababab;
+        border: 1px solid #cccccc;
+        overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    }
+    .container::-webkit-scrollbar { /* WebKit */
+        width: 0;
+        height: 0;
     }
     hr.solid {
-        border-top: 3px solid #9c9595;
+        border-top: 3px solid #cacaca;
     }
     button {
         border-radius: 6px;
         border: transparent;
-        background: #7d4646;
+        background: #969393;
         color: #fff;
         transition: 0.3s;
         cursor: pointer;
